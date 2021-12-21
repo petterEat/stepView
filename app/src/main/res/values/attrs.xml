@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StepView">
+        <!-- 步骤点数 -->
+        <attr name="count" format="integer"/>
+        <!-- 连接步骤点直接的线条颜色以及线条宽度 -->
+        <attr name="line_normal_color" format="color|reference"/>
+        <attr name="line_passed_color" format="color|reference"/>
+        <attr name="line_stroke_with" format="dimension"/>
+        <!-- 文字说明信息 -->
+        <attr name="text_color" format="color"/>
+        <attr name="text_size" format="dimension"/>
+        <attr name="text_to_line_margin" format="dimension"/>
+        <!-- 边距 -->
+        <attr name="margin" format="dimension"/>
+        <!-- 默认文字在线条下面 线到顶部的距离 文字到底部的距离 -->
+        <attr name="line_to_top_margin" format="dimension"/>
+        <attr name="text_to_bottom_margin" format="dimension"/>
+        <!-- 步骤 -->
+        <attr name="step" format="enum">
+            <enum name="one" value="0" />
+            <enum name="two" value="1" />
+            <enum name="three" value="2" />
+            <enum name="four" value="3" />
+            <enum name="five" value="4" />
+        </attr>
+        <!-- 线条长度是否可变 -->
+        <attr name="line_length" format="enum">
+            <enum name="variable_length" value="0"/>
+            <enum name="fixed_length" value="1"/>
+        </attr>
+        <!-- 根据最大步骤点的量，来计算线条不变时的线条长度，线条长度可变时，该变量无效 -->
+        <attr name="max_dot_count" format="integer"/>
+        <!-- 文字是否在线条下面 默认是 -->
+        <attr name="text_location" format="enum">
+            <enum name="down" value="0"/>
+            <enum name="up" value="1"/>
+        </attr>
+        <!-- view是否可以被点击 -->
+        <attr name="view_clickable" format="boolean"/>
+    </declare-styleable>
+</resources>
