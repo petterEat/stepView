@@ -8,7 +8,7 @@
     android:background="@color/white"
     tools:context=".MainActivity">
 
-    <com.zksr.stepview.StepView
+    <com.zksr.step.StepView
         android:id="@+id/stepView"
         app:count="5"
         app:step="three"
