@@ -2,8 +2,10 @@ package com.zksr.stepview
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -11,4 +13,3 @@ class MainActivity : AppCompatActivity() {
         stepView.setStep(com.zksr.step.StepView.Step.FOUR)
     }
 }
-//https://juejin.cn/post/6932485276124233735  Android库发布到Maven Central全攻略
